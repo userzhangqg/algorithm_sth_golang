@@ -8,7 +8,7 @@ package day14
 */
 
 func singleNumber(nums []int) int {
-	// 相同异或为0，0异或任何数都为其本身
+	// 相同异或为0，0异或任何数都为其本身。
 	n := nums[0]
 
 	for i := 1; i < len(nums); i++ {
