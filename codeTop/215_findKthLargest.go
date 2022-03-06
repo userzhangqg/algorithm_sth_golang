@@ -5,6 +5,9 @@ package codeTop
 
 给定整数数组nums和整数k，请返回数组中第k个最大的元素。
 请注意，你需要找的是数组排序后的第k个最大的元素，而不是第k个不同的元素。
+
+随机快排，随机快选
+https://leetcode-cn.com/problems/kth-largest-element-in-an-array/solution/sui-ji-hua-kuai-su-pai-xu-sui-ji-hua-kua-hd1e/
 */
 
 func findKthLargest(nums []int, k int) int {
