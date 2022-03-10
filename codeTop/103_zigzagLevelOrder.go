@@ -22,7 +22,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 
 	q := []*TreeNode{root}
 
-	for level := 0; len(q) > 0; level++ {
+	for level := 1; len(q) > 0; level++ {
 		var tmp []int
 
 		size := len(q)
@@ -40,8 +40,8 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 			}
 		}
 
-		// 本质上和层序遍历一样，我们只需要把奇数层的元素翻转即可
-		if level%2 == 1 {
+		// 本质上和层序遍历一样，我们只需要把偶数层的元素翻转即可
+		if level%2 == 0 {
 			for m, n := 0, len(tmp)-1; m < n; m, n = m+1, n-1 {
 				tmp[m], tmp[n] = tmp[n], tmp[m]
 			}
