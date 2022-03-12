@@ -19,7 +19,7 @@ https://leetcode-cn.com/problems/merge-sorted-array/submissions/
 
 func merge1(nums1 []int, m int, nums2 []int, n int) {
 	if m == 0 {
-		//nums1 = nums2
+		//nums1 = nums2 该方式错误，需用深拷贝赋值
 		copy(nums1, nums2)
 	}
 	if n == 0 {
