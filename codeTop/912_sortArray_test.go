@@ -21,7 +21,9 @@ func TestSortArray(t *testing.T) {
 	}
 
 	for _, tt := range testCases {
-		res := sortArray(tt.i)
+		//res := sortArray(tt.i)
+		//res := sortArray912(tt.i)
+		res := sortArray912HeapReview(tt.i)
 		fmt.Println(res)
 		//if res != tt.o {
 		//	t.Errorf("error")
